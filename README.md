@@ -98,7 +98,7 @@ The form has three accordion-based sections:
 
 This project is deployed on Vercel.
 
-🔗 Live URL: https://group-booking-ic2m2pn5g-suriyadevivs-projects.vercel.app/en-GB/booking
+🔗 Live URL: https://group-booking-app-git-main-suriyadevivs-projects.vercel.app/en-GB/booking
 
 ---
 
