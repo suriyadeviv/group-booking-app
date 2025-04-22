@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Group Booking Form", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:3000/en-GB/booking");
+    await page.goto("https://group-booking-app-git-main-suriyadevivs-projects.vercel.app/en-GB/booking");
   });
 
   test("should require mandatory fields", async ({ page }) => {
