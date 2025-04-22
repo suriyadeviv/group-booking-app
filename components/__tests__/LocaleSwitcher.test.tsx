@@ -7,7 +7,7 @@ jest.mock("next/navigation", () => ({
   usePathname: jest.fn(),
 }));
 
-jest.mock("@/types/i18n", () => ({
+jest.mock("@/config/i18n", () => ({
   countryCode: [
     { value: "en", label: "English" },
     { value: "es", label: "Spanish" },
