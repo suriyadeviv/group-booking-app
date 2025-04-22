@@ -1,0 +1,131 @@
+{
+  "GroupBooking": {
+    "title": "Request a group booking",
+    "description": "Planning a group event and need 10 or more rooms? Fill out the form below! Once we’ve received your request, our group booking team will be in touch.",
+    "contactTitle": "Contact details",
+    "yourContact": "Your contact details",
+    "fields": {
+      "title": "Title",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone number",
+      "email": "Email Address"
+    },
+    "select": "Select",
+    "titles": {
+      "mr": "Mr",
+      "mrs": "Mrs",
+      "ms": "Ms",
+      "miss": "Miss",
+      "mx": "Mx",
+      "master": "Master",
+      "dr": "Dr",
+      "prof": "Prof",
+      "lord": "Lord",
+      "lady": "Lady"
+    },
+    "continue": "Continue",
+    "bookingDetails": "Booking details",
+    "bookerType": "What type of booker are you?",
+    "bookerOptions": {
+      "personal": "Personal",
+      "business": "Business",
+      "travelManagement": "Travel Management Company",
+      "travelAgent": "Travel Agent/Tour Operator"
+    },
+    "companyName": "Company name",
+    "stayPurpose": "Is your group staying for Business or Leisure?",
+    "purposeOptions": {
+      "business": "Business",
+      "leisure": "Leisure"
+    },
+    "schoolGroup": "Please tick this box if you are booking for a school or youth group.",
+    "reasonForVisit": "What is the reason for your group's visit?",
+    "visitReasons": [
+       "Association",
+       "Conference",
+       "Exhibition",
+      "Charity event",
+      "Business meeting",
+       "Bus tour",
+       "Graduation/Reunion",
+      "Other"
+    ],
+    "enterHotel" : "Enter hotel name or location",
+    "checkInOut" : "Check In | Check Out",
+    "packageType": "Package type",
+    "packageInfo": "Subject to availability. Room only not available for group bookings.",
+    "packageOptions": {
+      "breakfast": "Premier Inn Breakfast",
+      "mealDeal": "Meal deal (dinner, drink and breakfast)"
+    },
+    "roomRequirements": "Room Requirements",
+    "roomSelect": "Select the maximum number of rooms required by room type and occupancy.",
+    "roomTypesLinkDesc": "See room types",
+    "roomTypesLink": "https://www.premierinn.com/gb/en/sleep/our-rooms.html",
+    "familyRoom": "Travelling/staying with children (2-15 years).",
+    "accessibleRoom": "Accessible room is needed",
+    "roomRules": "At least one adult (18+) must be in every room with a child under 16 years.",
+    "readOccupancy": "Read occupancy rules",
+    "readOccupancyLink": "https://www.premierinn.com/gb/en/terms/booking-terms-and-conditions.html",
+    "roomTypes": [
+      { "id": "single", "name": "Single Occupancy", "description": "1 adult" },
+      { "id": "double", "name": "Double Occupancy", "description": "2 adults" },
+      { "id": "twin", "name": "Twin", "description": "2 adults" }
+    ],
+    "familyRoomTypes": [
+      {
+        "id": "family2",
+        "name": "Family of 2",
+        "description": "1 adult + 1 child"
+      },
+      {
+        "id": "family3a",
+        "name": "Family of 3",
+        "description": "2 adults + 1 child"
+      },
+      {
+        "id": "family3b",
+        "name": "Family of 3",
+        "description": "1 adult + 2 children"
+      },
+      {
+        "id": "family4",
+        "name": "Family of 4",
+        "description": "2 adults + 2 children"
+      }
+    ],
+    "accessibleRoomTypes": [
+      { "id": "aSingle", "name": "Accessible single occupancy", "description": "1 adult" },
+      { "id": "aDouble", "name": "Accessible double occupancy", "description": "2 adults" },
+      { "id": "aTwin", "name": "Accessible twin", "description": "2 adults" }
+    ],
+    "totalRooms": "Total:",
+    "rooms": "Rooms",
+    "additionalNotes": "Additional Notes",
+    "additionalNotesWords": "Let us know if you have any additional information or special requests. If you do not require the same number of rooms on each night of your stay, please state below the number and type of rooms required each night.",
+    "groupBookingRestrictions": "Group bookings require a minimum of 10 rooms. For a group booking of 6 to 9 rooms, call us on 0333 003 8101. For a group booking of up to 5 rooms,",
+    "websiteLink": "https://www.premierinn.com/",
+    "websiteLinkText": "visit our website",
+    "submitBooking": "Submit request",
+    "returnHome": "Cancel and return to home",
+    "returnHomeLink": "https://www.premierinn.com/gb/en/home.html",
+    "errors": {
+      "titleRequired": "Title is required",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Email address is invalid",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid 10-digit phone number",
+      "bookerType": "Please select a type of booker before proceeding",
+      "companyNameRequired": "Company name is required",
+      "stayPurpose": "Please select the nature of your stay.",
+      "hotel": "Please select the hotel you would like to make a booking.",
+      "checkIn": "Please select a check-in date.",
+      "checkOut": "Please select a check-out date.",
+      "invalidCheckout": "Check-out date must be after check-in date."
+
+    }
+  }
+}

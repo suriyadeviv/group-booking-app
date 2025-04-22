@@ -1,0 +1,13 @@
+[
+    { "id": "1", "name": "Premier Inn London County Hall", "location": "London" },
+    { "id": "2", "name": "Premier Inn London City Aldgate", "location": "London" },
+    { "id": "3", "name": "Premier Inn London Southwark Tate Modern", "location": "London" },
+    { "id": "4", "name": "Premier Inn London Tower Bridge", "location": "London" },
+    { "id": "5", "name": "hub by Premier Inn London Covent Garden", "location": "London" },
+    { "id": "6", "name": "Premier Inn London Hampstead", "location": "London" },
+    { "id": "7", "name": "Premier Inn London Euston", "location": "London" },
+    { "id": "8", "name": "Premier Inn London Paddington Station", "location": "London" },
+    { "id": "9", "name": "Premier Inn Manchester Central", "location": "Manchester" },
+    { "id": "10", "name": "Premier Inn Birmingham Broad Street", "location": "Birmingham" }
+  ]
+  

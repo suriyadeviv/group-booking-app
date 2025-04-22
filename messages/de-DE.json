@@ -1,0 +1,150 @@
+{
+  "GroupBooking": {
+    "title": "Gruppenbuchung anfragen",
+    "description": "Sie planen eine Gruppenveranstaltung und benötigen 10 oder mehr Zimmer? Füllen Sie das untenstehende Formular aus! Sobald wir Ihre Anfrage erhalten haben, wird sich unser Team mit Ihnen in Verbindung setzen",
+    "contactTitle": "Kontaktinformationen",
+    "yourContact": "Ihre Kontaktinformationen",
+    "fields": {
+      "title": "Anrede",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Rufnummer",
+      "email": "E-Mail"
+    },
+    "select": "Bitte auswählen",
+    "titles": {
+      "herr": "Herr",
+      "frau": "Frau",
+      "divers": "Divers",
+      "herrDr": "Herr Dr.",
+      "frauDr": "Frau Dr.",
+      "herrProf": "Herr Prof.",
+      "frauProf": "Frau Prof.",
+      "herrProfDr": "Herr Prof. Dr.",
+      "frauProfDr": "Frau Prof. Dr."
+    },
+    "continue": "Weiter",
+    "bookingDetails": "Buchungsdetails",
+    "bookerType": "Um welche Art von Buchung handelt es sich?",
+    "bookerOptions": {
+      "personal": "Privat",
+      "business": "Geschäftlich",
+      "travelManagement": " Agentur",
+      "travelAgent": " Reisebüro/Reiseveranstalter"
+    },
+    "companyName": "Firmenname",
+    "stayPurpose": "Reist die Gruppe privat oder geschäftlich?",
+    "purposeOptions": {
+      "business": "Geschäftlich",
+      "leisure": " Privat"
+    },
+    "schoolGroup": "Bitte kreuzen Sie dieses Feld an, wenn Sie für eine Schule oder Jugendgruppe buchen.",
+    "reasonForVisit": "Was ist der Anlass des Aufenthalts der Gruppe?",
+    "visitReasons": [
+       "Verein",
+       "Busreise",
+       "Geschäftsreise",
+      "Wohltätigkeitsveranstaltung",
+      "Regierung",
+       "Freizeitreise/Privatgruppe",
+       "Abschlussfeier/Wiedervereinigung",
+      "Musikband"
+    ],
+    "enterHotel" : "Hotel eingeben",
+    "checkInOut" : "Anreise | Abreise",
+    "packageType": "Art des Leistungspakets",
+    "packageInfo": "Je nach Verfügbarkeit.",
+    "packageOptions": {
+      "breakfast": "Premier Inn Frühstück",
+      "mealDeal": "Meal Deal (Abendessen, Getränk und Frühstück)"
+    },
+    "roomRequirements": "Zimmeranforderungen",
+    "roomSelect": "Wählen Sie die Anzahl der benötigten Zimmer nach Zimmertyp und Belegung aus",
+    "roomTypesLinkDesc": "Zimmertypen anzeigen",
+    "roomTypesLink": "https://www.premierinn.com/de/de/einfach-schoener-schlafen/zimmer.html",
+    "familyRoom": "Reisen/Übernachten mit Kindern (2-15 Jahre).",
+    "accessibleRoom": "Barrierefreies Zimmer wird benötigt.",
+    "roomRules": "In jedem Zimmer mit einem Kind unter 16 Jahren muss mindestens ein Erwachsener (über 18 Jahre) anwesend sein.",
+    "readOccupancy": "Belegungsrichtlinie lesen",
+    "readOccupancyLink": "https://www.premierinn.com/de/de/bedingungen/allgemeine-geschaeftsbedingungen-deutschland.html",
+    "roomTypes": [
+      {
+        "id": "einzelbelegung",
+        "name": "Einzelbelegung",
+        "description": "1 Erwachsener"
+      },
+      {
+        "id": "doppelzimmer",
+        "name": "Doppelzimmer",
+        "description": "2 Erwachsene"
+      },
+      {
+        "id": "zweibettzimmer",
+        "name": "Zweibettzimmer",
+        "description": "2 Erwachsene"
+      }],
+      "familyRoomTypes": [
+      {
+        "id": "familie2",
+        "name": "Familie mit 2 Personen",
+        "description": "1 Erwachsene + 1 Kind"
+      },
+      {
+        "id": "Familie3a",
+        "name": "Familie mit 3 Personen",
+        "description": "2 Erwachsene + 1 Kind"
+      },
+      {
+        "id": "Familie3b",
+        "name": "Familie mit 3 Personen",
+        "description": "1 Erwachsene + 2 Kinder"
+      },
+      {
+        "id": "Familie4",
+        "name": "Familie mit 4 Personen",
+        "description": "2 Erwachsene + 2 Kinder"
+      }
+    ],
+    "accessibleRoomTypes": [
+      {
+        "id": "aEinzelbelegung",
+        "name": "Einzelbelegung barrierefrei",
+        "description": "1 Erwachsener"
+      },
+      {
+        "id": "aDoppelzimmer",
+        "name": "Doppelbelegung barrierefrei",
+        "description": "2 Erwachsene"
+      },
+      {
+        "id": "aZweibettzimmer",
+        "name": "Zweibett barrierefrei",
+        "description": "2 Erwachsene"
+      }
+    ],
+    "totalRooms": "Gesamt:",
+    "rooms": "Zimmer",
+    "additionalNotes": "Zusätzliche Informationen (optional)",
+    "additionalNotesWords": "Teilen Sie uns mit, ob Sie zusätzliche Anmerkungen oder besondere Wünsche haben. Wenn Ihr Zimmerbedarf während Ihres Aufenthalts variiert, teilen Sie uns die Anzahl der Zimmer und Zimmertypen mit, die Sie pro Nacht benötigen.",
+    "groupBookingRestrictions": "Gruppenbuchungen erfordern eine Mindestanzahl von 10 Zimmern. Für eine Reservierung von 6 bis 9 Zimmern rufen Sie uns bitte an unter +49 (0) 69 244 330 431. Für eine Reservierung von bis zu 5 Zimmern besuchen Sie bitte ",
+    "websiteLink": "https://www.premierinn.com/de/de/home.html",
+    "websiteLinkText": "unsere Webseite.",
+    "submitBooking": "Anfrage abschicken",
+    "returnHome": "Abbrechen und zurück zum Home Screen",
+    "returnHomeLink": "https://www.premierinn.com/de/de/home.html",  
+    "errors": {
+      "titleRequired": "Bitte wählen Sie eine Anrede.",
+      "firstNameRequired": "Bitte geben Sie Ihren Vornamen an (max. 20 Zeichen).",
+      "lastNameRequired": "Bitte geben Sie Ihren Nachnamen an (max. 30 Zeichen).",
+      "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse an.",
+      "emailInvalid": "Bitte geben Sie Ihre E-Mail-Adresse an..",
+      "phoneRequired": "Bitte geben Sie eine gültige Telefonnummer an.",
+      "bookerType": "Bitte wählen Sie die Buchungsart aus.",
+      "companyNameRequired": "Bitte geben Sie den Firmennamen an.",
+      "stayPurpose": "Bitte geben Sie die Art des Aufenthalts an, bevor Sie fortfahren.",
+      "hotel": "Bitte wählen Sie das Hotel aus, für das Sie die Buchung vornehmen möchten.",
+      "checkIn": "Bitte wählen Sie ein Check-in-Datum aus.",
+      "checkOut": "Bitte wählen Sie ein Abreisedatum."
+    }
+  }
+}
