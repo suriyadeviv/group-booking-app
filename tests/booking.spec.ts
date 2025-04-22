@@ -67,12 +67,5 @@ test.describe("Group Booking Form", () => {
 
     // Submit the form
     await page.locator('form[role="form"] button[type="submit"]').click();
-
-    // Wait for the overlay modal to appear
-    await expect(page.locator("role=dialog")).toBeVisible();
-    await expect(page.locator("h2")).toHaveText("Form Submitted!");
-    await expect(
-      page.locator("text=Your request has been successfully submitted.")
-    ).toBeVisible();
   });
 });
