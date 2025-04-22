@@ -96,7 +96,9 @@ The form has three accordion-based sections:
 4. Once the installation is complete, you can start the development server:
 ```pnpm dev```
 
-Open [http://localhost:3000/en-GB/booking](http://localhost:3000/en-GB/booking) with your browser
+This project is deployed on Vercel.
+
+🔗 Live URL: https://group-booking-ic2m2pn5g-suriyadevivs-projects.vercel.app/en-GB/booking
 
 ---
 
