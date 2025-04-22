@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
           {
             key: 'X-Frame-Options',
             value: 'DENY'
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'index, follow'
           }
         ]
       },
