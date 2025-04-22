@@ -41,9 +41,8 @@ jest.mock("next/image", () => ({
   default: (props: any) => {
     const fixedProps = {
       ...props,
-      priority: props.priority ? "true" : undefined,
     };
-    return <img {...fixedProps} />;
+    return <img alt="test" {...fixedProps} />;
   },
 }));
 

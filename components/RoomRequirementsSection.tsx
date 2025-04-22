@@ -22,7 +22,7 @@ export default function RoomRequirementsSection() {
 
   const roomCounts = watch("roomCount") || {};
   // room counting
- const totalRooms = Object.entries(roomCounts).reduce((sum, [key, count]) => {
+ const totalRooms = Object.entries(roomCounts).reduce((sum, [_key, count]) => {
     const isVisible = true;
     return isVisible ? sum + parseInt(count as string, 10) : sum;
   }, 0);
