@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor, act } from "@testing-library/react";
 import BookingDetailsSection from "../BookingDetailsSection";
 import { useFormContext, useWatch } from "react-hook-form";
 
@@ -79,8 +79,10 @@ describe("BookingDetailsSection", () => {
     jest.clearAllMocks();
   });
 
-  const renderBookingSection = () => {
-    render(<BookingDetailsSection onNext={mockOnNext} />);
+  const renderBookingSection = async() => {
+    await act(async () => {
+      render(<BookingDetailsSection onNext={mockOnNext} />);
+    });
   };
 
   it("renders the booking form with all sections", async () => {

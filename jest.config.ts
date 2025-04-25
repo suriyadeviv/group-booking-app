@@ -60,6 +60,7 @@ const config: JestConfigWithTsJest = {
     '!**/vitest.config.ts',        // Exclude Vitest config
     '!**/.storybook/**',           // Exclude Storybook config
     '!**/*.spec.ts',               // Exclude playwright spec files
+    '!playwright.config.ts',       // Exclude playwright config
   ],
 };
 
