@@ -8,7 +8,7 @@ import AccordionSection from "./AccordionSection";
 import ContactDetailsSection from "./ContactDetailsSection";
 import RoomRequirementsSection from "./RoomRequirementsSection";
 import BookingDetailsSection from "./BookingDetailsSection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 import { Button } from "@/stories/button/Button";
 import { OverlayModal } from "@/stories/modal/OverlayModal";
@@ -38,9 +38,19 @@ export default function GroupBookingForm() {
     },
   });
 
+  useEffect(() => {
+    const firstErrorKey = Object.keys(methods.formState.errors)[0];
+    if (firstErrorKey) {
+      const el = document.getElementById(firstErrorKey);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        (el as HTMLElement).focus?.();
+      }
+    }
+  }, [methods.formState.errors]);
+
   const {
-    handleSubmit,
-    formState: { isValid },
+    handleSubmit
   } = methods;
 
   const handleToggle = async (id: string) => {
@@ -48,14 +58,6 @@ export default function GroupBookingForm() {
   };
 
   const onSubmit = async (data: FormData) => {
-    if (!isValid) {
-      const firstError = Object.keys(methods.formState.errors)[0];
-      if (firstError) {
-        const element = document.getElementById(firstError);
-        element?.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-      return;
-    }
 
     try {
       const response = await fetch("/api/submit", {
