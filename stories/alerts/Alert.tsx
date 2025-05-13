@@ -14,7 +14,7 @@ const Alert: React.FC<AlertProps> = ({ type, message, theme = "light" }) => {
     },
     error: {
       light: "bg-red-50 border-l-4 border-red-400 text-red-800",
-      dark: "bg-red-100 border-l-4 border-red-600 text-red-100"
+      dark: "bg-red-100 border-l-4 border-red-600 text-red-800"
     }
   };
 

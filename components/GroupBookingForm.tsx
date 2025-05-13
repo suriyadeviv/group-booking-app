@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -20,6 +18,7 @@ export default function GroupBookingForm() {
   );
   const { theme } = useTheme();
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [submitAttempted, setSubmitAttempted] = useState(false);
 
   const methods = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -37,28 +36,17 @@ export default function GroupBookingForm() {
       checkOut: ""
     },
   });
-
-  useEffect(() => {
-    const firstErrorKey = Object.keys(methods.formState.errors)[0];
-    if (firstErrorKey) {
-      const el = document.getElementById(firstErrorKey);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "center" });
-        (el as HTMLElement).focus?.();
-      }
-    }
-  }, [methods.formState.errors]);
-
-  const {
-    handleSubmit
-  } = methods;
-
+  
   const handleToggle = async (id: string) => {
     setActiveAccordion(activeAccordion === id ? null : id);
   };
 
-  const onSubmit = async (data: FormData) => {
-
+  const {
+    handleSubmit,
+    formState: { errors },
+  } = methods;
+  
+  const wrappedSubmit = handleSubmit(async (data: FormData) => {
     try {
       const response = await fetch("/api/submit", {
         method: "POST",
@@ -78,8 +66,43 @@ export default function GroupBookingForm() {
     } catch (error) {
       console.error("Submission error:", error);
     }
-  };
+  });
 
+  useEffect(() => {
+    if (!submitAttempted) return;
+  
+    const firstErrorKey = Object.keys(errors)[0];
+    if (firstErrorKey) {
+      const fieldToAccordionMap: Record<string, string> = {
+        title: "contact",
+        firstName: "contact",
+        lastName: "contact",
+        phone: "contact",
+        email: "contact",
+        bookerType: "booking",
+        stayPurpose: "booking",
+        hotel: "booking",
+        checkIn: "booking",
+        checkOut: "booking",
+        roomCount: "rooms",
+      };
+  
+      const accordionId = fieldToAccordionMap[firstErrorKey];
+      if (accordionId) {
+        setActiveAccordion(accordionId);
+      }
+      // Scroll to the first error field
+      setTimeout(() => {
+        const el = document.getElementById(firstErrorKey);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          (el as HTMLElement).focus?.();
+        }
+      }, 300);
+    }
+  }, [errors, submitAttempted]);
+  
+  
   return showSuccessModal ? (
     <OverlayModal
       isOpen={showSuccessModal}
@@ -89,7 +112,10 @@ export default function GroupBookingForm() {
   ) : (
     <FormProvider {...methods}>
       <form role='form'
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={(e) => {
+          setSubmitAttempted(true);
+          wrappedSubmit(e);
+        }}
         className="space-y-6 max-w-4xl mx-auto"
       >
         <div className="space-y-4">

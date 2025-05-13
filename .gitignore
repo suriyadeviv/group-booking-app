@@ -43,6 +43,8 @@ next-env.d.ts
 
 *storybook.log
 
+lighthouse-report.html
+
 # Playwright
 node_modules/
 /test-results/
